@@ -15,7 +15,7 @@ function Input() {
     }
 
     try {
-      const res = await axios.post("http://localhost:4004/blog", {
+      const res = await axios.post("http://16.170.254.172:4004/blog", {
         username: username,
         context: context
       });

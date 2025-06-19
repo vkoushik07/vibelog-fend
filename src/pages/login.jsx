@@ -18,7 +18,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post('http://localhost:4004/auth/login', formData);
+      const res = await axios.post('http://16.170.254.172:4004/auth/login', formData);
 
       if (res.status === 200 && res.data.username) {
         localStorage.setItem("name", res.data.username);

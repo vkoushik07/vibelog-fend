@@ -18,7 +18,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:4004/auth", formData);
+      const res = await axios.post("http://16.170.254.172:4004/auth", formData);
       console.log("Sent:", formData);
       if (res.status === 200 && res.data.username) {
         localStorage.setItem("name", res.data.username);
