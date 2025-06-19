@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Clone Frontend Repo') {
             steps {
-                git 'https://github.com/vkoushik07/vibelog-fend'
+                   git branch: 'main', url: 'https://github.com/vkoushik07/vibelog-fend'
             }
         }
 
